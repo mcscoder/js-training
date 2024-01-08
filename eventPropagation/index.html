@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 500px;
+        height: 500px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #div2 {
+        background: green;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <div id="div2"></div>
+    </div>
+    <script>
+      const div1 = document.getElementById("div1");
+      const div2 = document.getElementById("div2");
+      div1.addEventListener("click", () => {
+        console.log("div1 clicked");
+      });
+      div2.addEventListener("click", (e) => {
+        // e.stopPropagation(); // uncomment to see the effect
+        console.log("div2 clicked");
+      });
+    </script>
+  </body>
+</html>
