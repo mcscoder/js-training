@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ex1: function scope
+      function func1() {
+        var greet = "hello";
+        console.log("greet from func1 :>> ", greet);
+      }
+      func1(); // work well
+      console.log("greet from outside of func1 :>> ", greet); // err
+    </script>
+  </body>
+</html>
