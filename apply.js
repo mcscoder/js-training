@@ -7,4 +7,4 @@ const person1 = {
   age: 30,
 };
 
-console.log(person.call(person1, "male", "single"));
+console.log(person.apply(person1, ["male", "single"]));
