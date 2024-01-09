@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // ex1:
+      // console.log("a :>> ", a); // err
+
+      // // ex2:
+      // console.log("b :>> ", b); // err
+      // b = "b";
+
+      // ex3:
+      var c;
+      console.log("c :>> ", c); // undef
+
+      // ex4:
+      console.log("d :>> ", d); // undef
+      var d;
+
+      // ex5:
+      console.log("e :>> ", e); // undef
+      var e = "e";
+      console.log("e :>> ", e); // "e"
+
+      // ex6:
+      var f;
+      console.log("f :>> ", f); // undef
+      f = "f";
+      console.log("f :>> ", f); // "f"
+
+      /* explain: ex6 is the same with ex5 */
+
+      // ex7: hoisting function
+      functionHoisting("function hoisted"); // "function hoisted"
+      function functionHoisting(a) {
+        console.log("function hoisting :>> ", a);
+      }
+    </script>
+  </body>
+</html>
