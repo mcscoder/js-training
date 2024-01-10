@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      var variable1 = 10;
+      variable2 = 20; // err, it's must declare with keywords var, let or const
+
+      let octalNumber = 0123; // err, octal literals are not allowed
+
+      function myFunction(parameter) {
+        parameter = "asjdf"; // Error in strict mode
+      }
+
+      myFunction("asdkfjads");
+    </script>
+  </body>
+</html>
