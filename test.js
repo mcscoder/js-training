@@ -1,10 +1,5 @@
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  fullName: function () {
-    console.log(`${this.firstName} ${this.lastName}`);
-  },
-};
+{
+  let a = 10;
+}
 
-setTimeout(person.fullName);
-setTimeout(person.fullName.bind(person));
+console.log(a);
