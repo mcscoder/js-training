@@ -2,7 +2,7 @@
 const example1 = () => {
   const myPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      const success = true;
+      const success = false;
       if (success) {
         resolve("Succeeded");
       } else {
@@ -28,6 +28,7 @@ const example2 = () => {
       }, ms);
     });
   };
+
   newPromise(2000)
     .then(() => {
       console.log("First operation");
@@ -52,9 +53,10 @@ const example3 = () => {
   const promise2 = new Promise((resolve) => {
     setTimeout(() => {
       resolve("Operation 2");
-    }, 3000);
+    }, 5000);
   });
-  Promise.all([promise1, promise2]).then(([result1, result2]) => {
+  Promise.allSettled([promise1, promise2]).then(([result1, result2]) => {
     console.log(`${result1}, ${result2}`);
   });
 };
+example3();

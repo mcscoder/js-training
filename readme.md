@@ -9,4 +9,3 @@
 9. async await
 10. default event
 11. event propagation
-12.

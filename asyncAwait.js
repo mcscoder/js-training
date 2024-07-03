@@ -13,7 +13,6 @@ const fetchData = async () => {
     console.log(error);
   }
 };
-// fetchData();
 
 // ex2: Multiple async function
 const asyncFunction1 = async () => {
